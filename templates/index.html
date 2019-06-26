@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:1" rel="stylesheet">
+	<title>EngiNX 2019 - Team Unorthodox Inc</title>
+	<meta charset="utf-8">
+</head>
+<body style="background-color: #ACFED1;"><b>
+	<div style="display: block !important; background-color: #494848; height: 50px; line-height: 50px;">
+		<font color="white" face="Montserrat" size="3">
+		<div style="float: left; padding-left: 100px;">
+			EngiNX 2019 - Team Unorthodox Inc
+		</div>
+		<div style="float: right; padding-right: 150px;">
+			Contact
+		</div>
+		<div style="float: right; padding-right: 20px;">
+			About
+		</div>
+		<div style="float: right; padding-right: 20px;">
+			Services
+		</div>
+		<div style="float: right; padding-right: 20px;">
+			Home
+		</div>
+		</font>
+	</div></b>
+	<div class="myLabel" style="padding-top: 30px;"><center>
+    	<img id="blah" src="#" style="padding-left: 0px; padding-bottom: 30px;" />
+    	<input type='file' onchange="readURL(this);" />
+	</div>
+	<div style="padding-left: 300px; padding-top: 30px; padding-right: 400px; text-align: center;">
+		<font color="black" face="Verdana" size="3">
+		Detection of Mental Health diseases with  accuracy by means of generating a body heat map  of the patient with the help of a thermal camera  and applying techniques of image processing and  Deep Learning image classification models to  measure the magnitude of the detected disease.<br/>
+		</font>
+	</div>
+	<div style="padding-left:650px; padding-top: 20px;">
+		<button type="button" class="btn btn-primary btn-lg" id="test" style="padding-left:30px; padding-right:30px;">Diagnose</button>
+	</div>
+</body>
+<script type="text/javascript">
+	function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(250)
+                    .height(250);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $('#test').click(function(){
+    	alert('Result : Stressed');
+    })
+</script>
+</html>
